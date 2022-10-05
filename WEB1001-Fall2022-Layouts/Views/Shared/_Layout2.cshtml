@@ -1,0 +1,20 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    
+}
+
+<html lang="en-ca">
+    <head>
+        <title>@ViewData["Title"]</title>
+        <link href="~/css/site.css" rel="stylesheet" />
+        @await RenderSectionAsync("Styles", required: false)
+    </head>
+    <body>
+        <main>
+            @RenderBody()
+        </main>
+        @await RenderSectionAsync("Scripts", required: false)
+    </body>
+</html>
